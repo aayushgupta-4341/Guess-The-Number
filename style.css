@@ -1,0 +1,125 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#1e1e1e;
+color:#fff;
+transition:0.3s;
+}
+
+body.light{
+background:#f4f4f4;
+color:#111;
+}
+
+/* Theme Button */
+#themeBtn{
+position:absolute;
+top:20px;
+right:20px;
+font-size:20px;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+/* Container */
+.container{
+width:90%;
+max-width:350px;
+padding:25px;
+border-radius:12px;
+background:#2c2c2c;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+body.light .container{
+background:#fff;
+}
+
+/* Heading */
+h1{
+margin-bottom:10px;
+}
+
+/* Range text */
+#rangeText{
+margin-bottom:15px;
+font-size:14px;
+opacity:0.8;
+}
+
+/* Level box */
+.level-box{
+margin-bottom:15px;
+}
+
+.level-box select{
+padding:6px;
+margin-top:5px;
+}
+
+/* Input box */
+.input-box{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-bottom:15px;
+}
+
+.input-box input{
+flex:1;
+padding:8px;
+border-radius:6px;
+border:none;
+}
+
+.input-box button{
+padding:8px 12px;
+background:#4caf50;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* Message */
+#message{
+margin:10px 0;
+font-weight:bold;
+}
+
+/* Stats */
+.stats{
+display:flex;
+justify-content:space-between;
+font-size:14px;
+margin-bottom:15px;
+}
+
+/* Restart button */
+#restartBtn{
+width:100%;
+padding:10px;
+background:#e53935;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* Responsive */
+@media(max-width:400px){
+.container{
+padding:20px;
+}
+}
